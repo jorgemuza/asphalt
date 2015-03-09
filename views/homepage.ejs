@@ -1,11 +1,13 @@
-    <!-- BEGIN SIDEBAR -->
+
+
+  <!-- BEGIN SIDEBAR -->
     <div class="page-sidebar" data-pages="sidebar">
       <div id="appMenu" class="sidebar-overlay-slide from-top">
       </div>
         <!-- BEGIN SIDEBAR HEADER -->
         <div class="sidebar-header">
             <img src="img/logo_white.png" alt="logo" class="brand" data-src="img/logo_white.png" data-src-retina="img/logo_white_2x.png" width="78" height="22">
-           <div class="sidebar-header-controls">
+            <div class="sidebar-header-controls">
             <button data-pages-toggle="#appMenu" class="btn btn-xs sidebar-slide-toggle btn-link m-l-20" type="button"><i class="fa fa-angle-down fs-16"></i></button>
             <button data-toggle-pin="sidebar" class="btn btn-link visible-lg-inline" type="button"><i class="fa fs-12"></i></button>
           </div>
@@ -15,41 +17,20 @@
         <div class="sidebar-menu">
             <ul class="menu-items">
                 <li class="m-t-30">
-                    <a href="#" class="detailed">
-                        <span class="title">Page 1</span>
-                        <span class="details">234 notifications</span>
+                    <a href="#/models" class="detailed">
+                        <span class="title">Models</span>
+                        <span class="details">Projection Models Dashboard</span>
                     </a>
                     <span class="icon-thumbnail "><i class="pg-mail"></i>
                     </span>
                 </li>
                 <li class="">
-                    <a href="#">
-                        <span class="title">Page 2</span>
+                    <a href="#/clients">
+                        <span class="title">Clients</span>
+                        <span class="details">Clients Dashboard</span>
                     </a>
                     <span class="icon-thumbnail "><i class="pg-social"></i>
                     </span>
-                </li>
-                <li class="">
-                    <a href="javascript:;">
-                        <span class="title">Page 3</span>
-                        <span class=" arrow"></span>
-                    </a>
-                    <span class="icon-thumbnail"><i class="pg-grid"></i>
-                    </span>
-                    <ul class="sub-menu">
-                        <li class="">
-                            <a href="#">Sub Page 1</a>
-                            <span class="icon-thumbnail">sp</span>
-                        </li>
-                        <li class="">
-                            <a href="#">Sub Page 2</a>
-                            <span class="icon-thumbnail">sp</span>
-                        </li>
-                        <li class="">
-                            <a href="#">Sub Page 3</a>
-                            <span class="icon-thumbnail">sp</span>
-                        </li>
-                    </ul>
                 </li>
             </ul>
             <div class="clearfix"></div>
@@ -58,6 +39,7 @@
     </div>
     <!-- END SIDEBAR -->
     <!-- START PAGE-CONTAINER -->
+
     <div class="page-container">
         <!-- START PAGE HEADER WRAPPER -->
         <!-- START HEADER -->
@@ -139,7 +121,7 @@
                         </li>
                     </ul>
                     <!-- END NOTIFICATION DROPDOWN -->
-                    <a href="#" class="search-link" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a> 
+                    <a href="#" class="search-link" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a>
                 </div>
             </div>
             <div class=" pull-right">
@@ -156,7 +138,7 @@
                 <div class="dropdown pull-right">
                   <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <span class="thumbnail-wrapper d32 circular inline m-t-5">
-                    <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
+                    <img src="img/profiles/avatar.jpg" alt="" data-src="img/profiles/avatar.jpg" data-src-retina="img/profiles/avatar_small2x.jpg" width="32" height="32">
                 </span>
                   </button>
                   <ul class="dropdown-menu profile-dropdown" role="menu">
@@ -184,46 +166,26 @@
         <div class="page-content-wrapper">
             <!-- START PAGE CONTENT -->
             <div class="content">
-                <!-- START JUMBOTRON -->
-                <div class="jumbotron" data-pages="parallax">
-                    <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
-                        <div class="inner">
-                            <!-- START BREADCRUMB -->
-                            <ul class="breadcrumb">
-                                <li>
-                                    <p>Pages</p>
-                                </li>
-                                <li><a href="#" class="active">Barebone template</a>
-                                </li>
-                            </ul>
-                            <!-- END BREADCRUMB -->
-                        </div>
-                    </div>
-                </div>
-                <!-- END JUMBOTRON -->
 
-                <!-- START CONTAINER FLUID -->
-                <div class="container-fluid container-fixed-lg">
-                <!-- BEGIN PlACE PAGE CONTENT HERE -->
 
-                <!-- END PLACE PAGE CONTENT HERE -->
-                </div>
-                <!-- END CONTAINER FLUID -->
-                
+            <div ng-view></div>
+
+
+
             </div>
             <!-- END PAGE CONTENT -->
             <!-- START FOOTER -->
             <div class="container-fluid container-fixed-lg footer">
                 <div class="copyright sm-text-center">
                     <p class="small no-margin pull-left sm-pull-reset">
-                        <span class="hint-text">Copyright © 2014</span>
-                        <span class="font-montserrat">REVOX</span>.
+                        <span class="hint-text">Copyright © 2015</span>
+                        <span class="font-montserrat">ASPHALT</span>.
                         <span class="hint-text">All rights reserved.</span>
                         <span class="sm-block"><a href="#" class="m-l-10 m-r-10">Terms of use</a> | <a href="#" class="m-l-10">Privacy Policy</a>
                         </span>
                     </p>
                     <p class="small no-margin pull-right sm-pull-reset">
-                        <a href="#">Hand-crafted</a> 
+                        <a href="#">Hand-crafted</a>
                         <span class="hint-text">&amp; Made with Love ®</span>
                     </p>
                     <div class="clearfix"></div>
@@ -689,3 +651,4 @@
       <!-- END Overlay Content !-->
     </div>
     <!-- END OVERLAY -->
+
